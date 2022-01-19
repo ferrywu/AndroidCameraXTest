@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CameraXTest</string>
+    <string name="capture_button_label">Capture</string>
+    <string name="record_button_label">Record</string>
+</resources>
