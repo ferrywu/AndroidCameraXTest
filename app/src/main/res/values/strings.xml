@@ -2,7 +2,10 @@
     <string name="app_name">CameraXTest</string>
     <string name="capture_button_label">Capture</string>
     <string name="record_button_label">Record</string>
+    <string name="stop_button_label">Stop</string>
     <string name="request_permissions_fail">Failed to request permissions</string>
     <string name="take_picture_success">Picture saved</string>
     <string name="take_picture_fail">Failed to take picure</string>
+    <string name="record_video_success">Video saved</string>
+    <string name="record_video_fail">Failed to record video</string>
 </resources>
