@@ -149,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
                 new ImageCapture.OnImageSavedCallback() {
                     @Override
                     public void onImageSaved(@NonNull ImageCapture.OutputFileResults outputFileResults) {
-                        Toast.makeText(getBaseContext(),
+                        Toast.makeText(MainActivity.this,
                                 getResources().getString(R.string.take_picture_success),
                                 Toast.LENGTH_LONG).show();
                         Log.d(getClass().getName(), "Saved picture to " + fileName);
@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onError(@NonNull ImageCaptureException exception) {
-                        Toast.makeText(getBaseContext(),
+                        Toast.makeText(MainActivity.this,
                                 getResources().getString(R.string.take_picture_fail),
                                 Toast.LENGTH_LONG).show();
                         Log.e(getClass().getName(), exception.getMessage());
@@ -191,7 +191,7 @@ public class MainActivity extends AppCompatActivity {
                 new VideoCapture.OnVideoSavedCallback() {
                     @Override
                     public void onVideoSaved(@NonNull VideoCapture.OutputFileResults outputFileResults) {
-                        Toast.makeText(getBaseContext(),
+                        Toast.makeText(MainActivity.this,
                                 getResources().getString(R.string.record_video_success),
                                 Toast.LENGTH_LONG).show();
                         Log.d(getClass().getName(), "Saved video to " + fileName);
@@ -200,7 +200,7 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onError(int videoCaptureError, @NonNull String message, @Nullable Throwable cause) {
-                        Toast.makeText(getBaseContext(),
+                        Toast.makeText(MainActivity.this,
                                 getResources().getString(R.string.record_video_fail),
                                 Toast.LENGTH_LONG).show();
                         Log.e(getClass().getName(), message);
